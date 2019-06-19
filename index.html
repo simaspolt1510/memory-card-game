@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="landing-container">
+        <div class="landing">
+            <h1>MEMOTEST</h1>
+            <div class="difficulty">
+                <p class="difficulty-description">Elegí la dificultad:</p>
+                <div class="difficulty-buttons-container">
+                    <button class="difficulty-btn easy" data-difficulty="easy">FÁCIL</button>
+                    <button class="difficulty-btn medium" data-difficulty="medium">MEDIO</button>
+                    <button class="difficulty-btn hard" data-difficulty="hard">DIFÍCIL</button>                 
+                </div>               
+            </div>
+        </div>
+    </div>    
+    <div class="memory-game-container hide">    
+        <div class="memory-board">
+            <div class="memory-card" data-image="react">
+                <img class="front-face" src="img/react.svg" alt="React">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="react">
+                <img class="front-face" src="img/react.svg" alt="React">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="angular">
+                <img class="front-face" src="img/angular.svg" alt="Angular">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="angular">
+                <img class="front-face" src="img/angular.svg" alt="Angular">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="aurelia">
+                <img class="front-face" src="img/aurelia.svg" alt="Aurelia">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="aurelia">
+                <img class="front-face" src="img/aurelia.svg" alt="Aurelia">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="backbone">
+                <img class="front-face" src="img/backbone.svg" alt="Backbone">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="backbone">
+                <img class="front-face" src="img/backbone.svg" alt="Backbone">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="ember">
+                <img class="front-face" src="img/ember.svg" alt="Ember">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="ember">
+                <img class="front-face" src="img/ember.svg" alt="Ember">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="vue">
+                <img class="front-face" src="img/vue.svg" alt="Vue">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>
+            <div class="memory-card" data-image="vue">
+                <img class="front-face" src="img/vue.svg" alt="Vue">
+                <img class="back-face" src="img/js-badge.svg" alt="Memory Card">
+            </div>                
+        </div>
+        <div class="current-game-info">
+            <p>Intentos: <span id="attempts"></span></p>
+            <p>Intentos Restantes: <span id="remaining"></span></p>
+        </div>    
+    </div> 
+    <div class="endgame-container hide">
+        <div class="endgame">
+            <h1 id="endgameMsg">PRUEBA</h1>
+            <button class="resetBtn" onclick="restartGame()">INTENTAR OTRA VEZ</button>
+        </div>
+    </div>  
+
+    <script src="main.js"></script>
+</body>
+</html>
